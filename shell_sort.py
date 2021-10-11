@@ -15,6 +15,7 @@ class shellSort(object):
                 j = i-gap
                 while j >= 0 and arr[j] > temp:
                     arr[j+gap] = arr[j]
+                    j-=gap
                 arr[j+gap] = temp
             gap = math.floor(gap / 3)
 
